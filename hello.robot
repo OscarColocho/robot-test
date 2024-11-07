@@ -26,4 +26,6 @@ SearchSong
     Press Keys  name:search_query   ENTER
     wait until element is visible   xpath://*[@title='Feid, ICON - FERXXO 151 (Official Video)']
     click element    xpath://*[@title='Feid, ICON - FERXXO 151 (Official Video)']
+    Sleep   40S
+    # este es un mensaje de prueba
     Sleep   20S
