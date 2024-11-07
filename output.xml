@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.4 on win32)" generated="2024-11-05T18:43:06.429300" rpa="false" schemaversion="5">
+<suite id="s1" name="Hello" source="c:\Users\OscarPC\Documents\robot test\hello.robot">
+<test id="s1-t1" name="TestCase1" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-05T18:43:06.709126" level="INFO">Opening browser 'edge' to base url 'https://youtube.com/'.</msg>
+<arg>${URL}</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-05T18:43:06.709126" elapsed="4.774491"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-05T18:43:11.484640" elapsed="0.178450"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-05T18:43:13.665478" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-05T18:43:11.664087" elapsed="2.001391"/>
+</kw>
+<kw name="SearchSong">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name:search_query</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-05T18:43:13.667066" elapsed="0.023069"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-05T18:43:13.691342" level="INFO">Typing text 'ferxxo 151' into text field 'name:search_query'.</msg>
+<arg>name:search_query</arg>
+<arg>ferxxo 151</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T18:43:13.691342" elapsed="0.116476"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-05T18:43:15.808019" level="INFO">Slept 2 seconds.</msg>
+<arg>2S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-05T18:43:13.807818" elapsed="2.000201"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-11-05T18:43:15.808523" level="INFO">Sending key(s) ('ARROW_DOWN',) to name:search_query element.</msg>
+<msg time="2024-11-05T18:43:16.098959" level="INFO">Pressing special key ARROW_DOWN to element.</msg>
+<msg time="2024-11-05T18:43:16.098959" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<arg>name:search_query</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-11-05T18:43:15.808523" elapsed="0.300200"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-11-05T18:43:16.108723" level="INFO">Sending key(s) ('ARROW_DOWN',) to name:search_query element.</msg>
+<msg time="2024-11-05T18:43:16.403177" level="INFO">Pressing special key ARROW_DOWN to element.</msg>
+<msg time="2024-11-05T18:43:16.403177" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<arg>name:search_query</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-11-05T18:43:16.108723" elapsed="0.302454"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-11-05T18:43:16.411177" level="INFO">Sending key(s) ('ENTER',) to name:search_query element.</msg>
+<msg time="2024-11-05T18:43:16.689779" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-11-05T18:43:16.689779" level="INFO">Releasing special key ENTER.</msg>
+<arg>name:search_query</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-11-05T18:43:16.411177" elapsed="0.314170"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath://*[@title='Feid, ICON - FERXXO 151 (Official Video)']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-05T18:43:16.725347" elapsed="1.066521"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-05T18:43:17.792982" level="INFO">Clicking element 'xpath://*[@title='Feid, ICON - FERXXO 151 (Official Video)']'.</msg>
+<arg>xpath://*[@title='Feid, ICON - FERXXO 151 (Official Video)']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-05T18:43:17.791868" elapsed="0.096623"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-05T18:43:37.889925" level="INFO">Slept 20 seconds.</msg>
+<arg>20S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-05T18:43:17.889524" elapsed="20.000401"/>
+</kw>
+<status status="PASS" start="2024-11-05T18:43:13.666010" elapsed="24.223915"/>
+</kw>
+<status status="PASS" start="2024-11-05T18:43:06.707019" elapsed="31.182906"/>
+</test>
+<status status="PASS" start="2024-11-05T18:43:06.434503" elapsed="31.457302"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Hello">Hello</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
